@@ -1,6 +1,6 @@
 # Sports
-The applicaion is created with Asp.net core 2.2
-Please change the Database connection string from appsettings.json of Sports.API project
+The applicaion is created with Asp.net core 2.2.
+Please change the Database connection string from appsettings.json of Sports.API project.
 Please run Update-Database from package managr console.Select Sports.API project while run the command.
 
 Run the solution by VS2017.
