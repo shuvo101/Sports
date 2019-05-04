@@ -1,0 +1,74 @@
+﻿@model SportsWeb.ViewModels.AthleteTestViewModel
+
+@{
+    ViewData["Title"] = "Index";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    var controllerName = this.ViewContext.RouteData.Values["controller"].ToString();
+}
+<form asp-area="" asp-controller="Login" asp-action="LogOff" method="post" id="logoutForm" class="navbar-right">
+    <ul class="nav navbar-nav navbar-right">
+        @*<li>
+                <a asp-area="" asp-controller="Manage" asp-action="Index" title="Manage">Hello @UserManager.GetUserName(User)!</a>
+            </li>*@
+        <li>
+            <button type="submit" class="btn btn-link navbar-btn navbar-link">Log out</button>
+        </li>
+    </ul>
+</form>
+
+<div class="box-body">
+    @if (Model.TestList.Count > 0)
+    {
+        <table id="example1" class="table table-bordered dataTable table-striped">
+            <thead>
+                <tr>
+                    <th>
+                        Date
+                    </th>
+                    <th>
+                        Test Name
+                    </th>
+                    <th>
+                        Distance
+                    </th>
+                    <th>
+                        Fitness Fating
+                    </th>
+                </tr>
+
+            </thead>
+            <tbody>
+                @foreach (var item in Model.TestList)
+                {
+                <tr>
+                    <td>
+                        <span asp-for="@item.TestDate" class="control-label">@item.TestDate.ToString("MMddyyyy")</span>
+
+                    </td>
+                    <td>
+                        <span asp-for="@item.TestName" class="control-label">@item.TestName</span>
+                    </td>
+                    <td>
+                        <span asp-for="@item.TestValue" class="control-label">@item.TestValue</span>
+                    </td>
+                    <td>
+                        <span asp-for="@item.FitnessRating" class="control-label">@item.FitnessRating</span>
+                    </td>
+                </tr>
+                }
+            </tbody>
+
+        </table>
+    }
+    else
+    {
+        <div class="col-md-12 center-block">
+            <h2>You have no test</h2>
+        </div>
+
+    }
+
+</div>
+

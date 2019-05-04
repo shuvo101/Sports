@@ -1,0 +1,347 @@
+﻿@model SportsWeb.ViewModels.TestAthleteViewModel
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    var controllerName = this.ViewContext.RouteData.Values["controller"].ToString();
+}
+
+<form asp-area="" asp-controller="Login" asp-action="LogOff" method="post" id="logoutForm" class="navbar-right">
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            <button type="submit" class="btn btn-link btn-info navbar-btn navbar-link">
+                <a asp-area="" asp-controller="Coach" asp-action="Index" title="Manage">Home</a>
+            </button>
+        </li>
+        <li>
+            <button type="submit" class="btn btn-link btn-danger navbar-btn navbar-link">Log out</button>
+        </li>
+    </ul>
+</form>
+
+<div class="box-body">
+    <div class="box-header with-border">
+        <h3 class="box-title">@Model.TestName D. @Model.TestDate.ToString("MMddyyyy")</h3>
+    </div>
+    <br />
+    @if (TempData["message_data_success"] != null)
+    {
+        <p id="messDisplay" class="lead" style="color:green; font:large; font-weight:bold; align-items:center;">@TempData["message_data_success"]</p>
+    }
+    @if (TempData["message_data"] != null)
+    {
+        <p id="messDisplay2" class="lead" style="color:red; font:large; font-weight:bold; align-items:center;">@TempData["message_data"]</p>
+    }
+    @if (Model.TestAthleteList.Count > 0)
+    {
+        <table id="example1" class="table table-bordered dataTable table-striped">
+            <thead>
+                <tr>
+                    <th>
+                        Ranking
+                    </th>
+                    <th>
+                        Distance
+                    </th>
+                    <th>
+                        Fitness rating
+                    </th>
+                </tr>
+
+            </thead>
+            @{
+                int i = 0;
+                i++;
+            }
+            <tbody>
+                @foreach (var item in Model.TestAthleteList)
+                {
+                    <tr>
+                        <td>
+                            @{ long id = item.ID; }
+                            <button type="button" class="btn btn-info btn-sm " data-toggle="modal" data-target="#myModal_@item.AthleteID">
+                                <span asp-for="@item.AthleteName" class="control-label">
+                                    @i
+                                    @{i++;} . @item.AthleteName
+                                </span>
+                            </button>
+                            <div id="myModal_@item.AthleteID" class="modal fade modalNumber2" role="dialog">
+                                <div class="modal-dialog container" style="width:65%">
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header" style="background-color:darkgray">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            <h4 class="modal-title">CHANGE DATA FROM ATHLETE</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form asp-controller="Coach" asp-action="EditAthleteTest" method="post" class="form-horizontal">
+                                                <input type="hidden" id="itemTestAthleteID_@item.ID" asp-for="@item.ID" />
+                                                <input type="hidden" id="itemAthleteID_@item.ID" asp-for="@item.AthleteID" />
+                                                <div class="form-group">
+                                                    <div class="col-md-12">
+                                                        <label for="inputUserName" class="col-md-4 control-label">Name</label>
+                                                        <div class="col-md-8">
+                                                            <select asp-for="@item.AthleteID" disabled class="form-control select2 " asp-items="ViewBag.AthleteID">
+                                                                <option disabled selected>--- Choose ---</option>
+                                                            </select>
+                                                            <span asp-validation-for="@item.AthleteID" class="help-block"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <label for="inputUserName" class="col-md-4 control-label">Distance(meter)</label>
+                                                        <div class="col-md-8">
+                                                            <input asp-for="@item.Distance" class="form-control" id="itemDistanceID_@item.ID">
+                                                            <span asp-validation-for="@item.Distance" class="help-block"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <button type="button" class="btn btn-success btn-sm pull-right" onclick="EditAthlete(@item.ID,@Model.ID);">Save</button>
+                                                    </div>
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger pull-left btn-icon icon-left btn_delete" data-selector=@id>
+                                                <i class="fa fa-trash-o"> Delete</i>
+                                            </button>
+                                            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </td>
+                        <td>
+                            <span asp-for="@item.Distance" class="control-label">@item.Distance</span>
+                        </td>
+                        <td>
+                            <span asp-for="@item.FitnessRating" class="control-label">@item.FitnessRating</span>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    <div>
+        <div class="col-md-12">
+            <div class="col-md-6">
+                <a href="#" id="LKSSEmployeeModal" class="small-box-footer pull-right modalNumber12 btn btn-success" data-toggle="modal" data-target="#LKSSEmployeeModalId">Add New Athelete to test <i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+            <div class="col-md-6">
+                <button type="button" class="btn btn-danger pull-left btn-icon icon-left btn_deleteTest" data-selector=@Model.ID>
+                    <i class="fa fa-trash-o"> Delete Test</i>
+                </button>
+            </div>
+
+        </div>
+
+        <div id="LKSSEmployeeModalId" class="modal fade modalNumber1 modelOpen2ndButtonclass" role="dialog">
+            <div class="modal-dialog container" style="width:65%">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color:darkgray">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title">Add New Athlete to test</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <!-- /.Main Content Body -->
+                            <div class="box-body">
+                                <form asp-controller="Coach" asp-action="CreateAthleteTest" method="post" class="form-horizontal">
+                                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                    <input type="hidden" asp-for="@Model.ID" />
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <div class="col-md-12">
+                                                <label for="inputUserName" class="col-md-4 control-label">Name</label>
+                                                <div class="col-md-8">
+                                                    <select asp-for="@Model.AthleteID" class="form-control select2" asp-items="ViewBag.AthleteID">
+                                                        <option disabled selected>--- Choose ---</option>
+                                                    </select>
+                                                    <span asp-validation-for="@Model.AthleteID" class="help-block"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label for="inputUserName" class="col-md-4 control-label">Distance(meter)</label>
+                                                <div class="col-md-8">
+                                                    <input asp-for="@Model.TestValue" class="form-control" id="inputBankName">
+                                                    <span asp-validation-for="@Model.TestValue" class="help-block"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <button type="submit" class="btn btn-primary btn-sm pull-right">Save</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <div class="modal-footer" style="background-color:#cc9089">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $('#messDisplay').delay(2000).hide(500);
+        $('#messDisplay2').delay(2000).hide(500);
+    });
+</script>
+<script type="text/javascript">
+
+function EditAthlete(id, testId) {
+        var item = {
+            TestAthleteID: $("#itemTestAthleteID_"+id).val(),
+            Distance: $("#itemDistanceID_" + id).val()
+        };
+        $.ajax({
+            url: "@Url.Content("~/Coach/EditAthleteTest")",
+            type: 'POST',
+            data: item,
+            success: function (response) {
+                console.log(response);
+                window.location.href = "/Coach/Details/" + testId;
+                                    },
+            error: function (xhr) {
+                alert("Something went wrong, please try again");
+            }
+        });
+    };
+</script>
+
+<script src="~/js/bootbox/bootbox.min.js"></script>
+<script src="~/js/bootbox/bootbox.min.js"></script>
+<script src="~/js/bootbox/bootstrap-hover-dropdown/twitter-bootstrap-hover-dropdown.min.js"></script>
+<script src="~/js/bootbox/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="~/js/bootbox/jquery.blockui.min.js"></script>
+<script src="~/js/bootbox/jquery.cookie.min.js"></script>
+<script src="~/js/bootbox/jquery.mockjax.js"></script>
+<script src="~/js/bootbox/uniform/jquery.uniform.min.js"></script>
+
+<script type="text/javascript">
+        (function ($) {
+            $(document).ready(function () {
+
+                $('.btn_delete').click(function (e) {
+
+                    var id = $(this).data('selector');
+                    bootbox.confirm("Do you really want to delete ?", function (result) {
+                        if (result === true) {
+                            var data = {
+                                id: id
+                            };
+                            $.ajax({
+                                data: data,
+                                url: '@Url.Action("DeleteAthlete")',
+                                type: 'POST',
+                                dataType: 'json',
+                                beforeSend: function () {
+                                    $.blockUI('<h2><img src="img/transparentLoader.gif" style="height:50px;width:50px;"/></h2>');
+                                    ////$.blockUI({ message: '<h2>LOL</h2>' });
+                                },
+                                success: function (response) {
+                                    if (response.success) {
+                                        bootbox.alert({
+                                            size: 'small',
+                                            message: "Deleted!",
+                                            callback: function() {
+                                                location.reload();
+                                            }
+                                        });
+                                    } else {
+                                        bootbox.alert({
+                                            size: 'small',
+                                            message: response.Message
+                                        });
+                                    }
+                                },
+                                error: function (error) {
+                                    console.log(error);
+                                    bootbox.alert({
+                                        size: 'small',
+                                        message: "Network Error!"
+                                    });
+                                }
+                            }); //send approval ajax call ends here
+                        }
+
+                    }); //bootbox alert ends here
+                }); //approve button click ends here
+
+
+            }); //document ready ends here
+
+        })(jQuery); // main function ends here
+
+</script>
+
+<script type="text/javascript">
+        (function ($) {
+            $(document).ready(function () {
+
+                $('.btn_deleteTest').click(function (e) {
+
+                    var id = $(this).data('selector');
+                    bootbox.confirm("Do you really want to delete ?", function (result) {
+                        if (result === true) {
+                            var data = {
+                                id: id
+                            };
+                            $.ajax({
+                                data: data,
+                                url: '@Url.Action("DeleteTest")',
+                                type: 'POST',
+                                dataType: 'json',
+                                beforeSend: function () {
+                                    $.blockUI('<h2><img src="img/transparentLoader.gif" style="height:50px;width:50px;"/></h2>');
+                                    ////$.blockUI({ message: '<h2>LOL</h2>' });
+                                },
+                                success: function (response) {
+                                    if (response.success) {
+                                        bootbox.alert({
+                                            size: 'small',
+                                            message: "Deleted!",
+                                            callback: function() {
+                                                //location.reload();
+                                                window.location.href = "/Coach/Index";
+                                            }
+                                        });
+                                    } else {
+                                        bootbox.alert({
+                                            size: 'small',
+                                            message: response.Message
+                                        });
+                                    }
+                                },
+                                error: function (error) {
+                                    console.log(error);
+                                    bootbox.alert({
+                                        size: 'small',
+                                        message: "Network Error!"
+                                    });
+                                }
+                            }); //send approval ajax call ends here
+                        }
+
+                    }); //bootbox alert ends here
+                }); //approve button click ends here
+
+
+            }); //document ready ends here
+
+        })(jQuery); // main function ends here
+
+</script>

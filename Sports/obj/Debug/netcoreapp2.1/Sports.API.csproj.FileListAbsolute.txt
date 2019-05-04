@@ -1,0 +1,42 @@
+C:\Users\PRIME TECH\source\repos\Sports\Sports\bin\Debug\netcoreapp2.1\Sports.API.deps.json
+C:\Users\PRIME TECH\source\repos\Sports\Sports\bin\Debug\netcoreapp2.1\Sports.API.runtimeconfig.json
+C:\Users\PRIME TECH\source\repos\Sports\Sports\bin\Debug\netcoreapp2.1\Sports.API.runtimeconfig.dev.json
+C:\Users\PRIME TECH\source\repos\Sports\Sports\bin\Debug\netcoreapp2.1\Sports.API.dll
+C:\Users\PRIME TECH\source\repos\Sports\Sports\bin\Debug\netcoreapp2.1\Sports.API.pdb
+C:\Users\PRIME TECH\source\repos\Sports\Sports\obj\Debug\netcoreapp2.1\Sports.API.csproj.CoreCompileInputs.cache
+C:\Users\PRIME TECH\source\repos\Sports\Sports\obj\Debug\netcoreapp2.1\Sports.API.RazorAssemblyInfo.cache
+C:\Users\PRIME TECH\source\repos\Sports\Sports\obj\Debug\netcoreapp2.1\Sports.API.RazorAssemblyInfo.cs
+C:\Users\PRIME TECH\source\repos\Sports\Sports\obj\Debug\netcoreapp2.1\Sports.API.AssemblyInfoInputs.cache
+C:\Users\PRIME TECH\source\repos\Sports\Sports\obj\Debug\netcoreapp2.1\Sports.API.AssemblyInfo.cs
+C:\Users\PRIME TECH\source\repos\Sports\Sports\obj\Debug\netcoreapp2.1\Sports.API.RazorTargetAssemblyInfo.cache
+C:\Users\PRIME TECH\source\repos\Sports\Sports\obj\Debug\netcoreapp2.1\Sports.API.dll
+C:\Users\PRIME TECH\source\repos\Sports\Sports\obj\Debug\netcoreapp2.1\Sports.API.pdb
+C:\Users\PRIME TECH\source\repos\Sports\Sports\obj\Debug\netcoreapp2.1\Sports.API.csprojAssemblyReference.cache
+C:\Imtiaz\Guru\Sports_WEB_API\Sports\bin\Debug\netcoreapp2.1\Sports.API.deps.json
+C:\Imtiaz\Guru\Sports_WEB_API\Sports\bin\Debug\netcoreapp2.1\Sports.API.runtimeconfig.json
+C:\Imtiaz\Guru\Sports_WEB_API\Sports\bin\Debug\netcoreapp2.1\Sports.API.runtimeconfig.dev.json
+C:\Imtiaz\Guru\Sports_WEB_API\Sports\bin\Debug\netcoreapp2.1\Sports.API.dll
+C:\Imtiaz\Guru\Sports_WEB_API\Sports\bin\Debug\netcoreapp2.1\Sports.API.pdb
+C:\Imtiaz\Guru\Sports_WEB_API\Sports\obj\Debug\netcoreapp2.1\Sports.API.csprojAssemblyReference.cache
+C:\Imtiaz\Guru\Sports_WEB_API\Sports\obj\Debug\netcoreapp2.1\Sports.API.csproj.CoreCompileInputs.cache
+C:\Imtiaz\Guru\Sports_WEB_API\Sports\obj\Debug\netcoreapp2.1\Sports.API.RazorAssemblyInfo.cache
+C:\Imtiaz\Guru\Sports_WEB_API\Sports\obj\Debug\netcoreapp2.1\Sports.API.RazorAssemblyInfo.cs
+C:\Imtiaz\Guru\Sports_WEB_API\Sports\obj\Debug\netcoreapp2.1\Sports.API.AssemblyInfoInputs.cache
+C:\Imtiaz\Guru\Sports_WEB_API\Sports\obj\Debug\netcoreapp2.1\Sports.API.AssemblyInfo.cs
+C:\Imtiaz\Guru\Sports_WEB_API\Sports\obj\Debug\netcoreapp2.1\Sports.API.RazorTargetAssemblyInfo.cache
+C:\Imtiaz\Guru\Sports_WEB_API\Sports\obj\Debug\netcoreapp2.1\Sports.API.dll
+C:\Imtiaz\Guru\Sports_WEB_API\Sports\obj\Debug\netcoreapp2.1\Sports.API.pdb
+E:\Personal\RND\Sports_WEB_API_new\Sports_WEB_API\Sports\bin\Debug\netcoreapp2.1\Sports.API.deps.json
+E:\Personal\RND\Sports_WEB_API_new\Sports_WEB_API\Sports\bin\Debug\netcoreapp2.1\Sports.API.runtimeconfig.json
+E:\Personal\RND\Sports_WEB_API_new\Sports_WEB_API\Sports\bin\Debug\netcoreapp2.1\Sports.API.runtimeconfig.dev.json
+E:\Personal\RND\Sports_WEB_API_new\Sports_WEB_API\Sports\bin\Debug\netcoreapp2.1\Sports.API.dll
+E:\Personal\RND\Sports_WEB_API_new\Sports_WEB_API\Sports\bin\Debug\netcoreapp2.1\Sports.API.pdb
+E:\Personal\RND\Sports_WEB_API_new\Sports_WEB_API\Sports\obj\Debug\netcoreapp2.1\Sports.API.csprojAssemblyReference.cache
+E:\Personal\RND\Sports_WEB_API_new\Sports_WEB_API\Sports\obj\Debug\netcoreapp2.1\Sports.API.csproj.CoreCompileInputs.cache
+E:\Personal\RND\Sports_WEB_API_new\Sports_WEB_API\Sports\obj\Debug\netcoreapp2.1\Sports.API.RazorAssemblyInfo.cache
+E:\Personal\RND\Sports_WEB_API_new\Sports_WEB_API\Sports\obj\Debug\netcoreapp2.1\Sports.API.RazorAssemblyInfo.cs
+E:\Personal\RND\Sports_WEB_API_new\Sports_WEB_API\Sports\obj\Debug\netcoreapp2.1\Sports.API.AssemblyInfoInputs.cache
+E:\Personal\RND\Sports_WEB_API_new\Sports_WEB_API\Sports\obj\Debug\netcoreapp2.1\Sports.API.AssemblyInfo.cs
+E:\Personal\RND\Sports_WEB_API_new\Sports_WEB_API\Sports\obj\Debug\netcoreapp2.1\Sports.API.RazorTargetAssemblyInfo.cache
+E:\Personal\RND\Sports_WEB_API_new\Sports_WEB_API\Sports\obj\Debug\netcoreapp2.1\Sports.API.dll
+E:\Personal\RND\Sports_WEB_API_new\Sports_WEB_API\Sports\obj\Debug\netcoreapp2.1\Sports.API.pdb

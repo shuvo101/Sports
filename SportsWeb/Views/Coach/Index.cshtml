@@ -1,0 +1,140 @@
+﻿@model SportsWeb.ViewModels.TestViewModel
+
+@{
+    ViewData["Title"] = "Index";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    var controllerName = this.ViewContext.RouteData.Values["controller"].ToString();
+}
+<form asp-area="" asp-controller="Login" asp-action="LogOff" method="post" id="logoutForm" class="navbar-right">
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            <button type="submit" class="btn btn-link btn-info navbar-btn navbar-link">
+                <a asp-area="" asp-controller="Coach" asp-action="Index" title="Manage">Home</a>
+            </button>
+        </li>
+        <li>
+            <button type="submit" class="btn btn-link navbar-btn navbar-link">Log out</button>
+        </li>
+    </ul>
+</form>
+
+<div class="box-body">
+    <div class="row">
+        <div class="col-md-12">
+            <a href="#" id="SportsModal" class="small-box-footer modalNumber12 btn btn-info" data-toggle="modal" data-target="#SportsCreateTestModalId">CREATE NEW TEST <i class="fa fa-arrow-circle-right"></i></a>
+        </div>
+    </div>
+    <br />
+    @if (TempData["message_data_success"] != null)
+    {
+        <p id="messDisplay" class="lead" style="color:green; font:large; font-weight:bold; align-items:center;">@TempData["message_data_success"]</p>
+    }
+    @if (TempData["message_data"] != null)
+    {
+        <p id="messDisplay2" class="lead" style="color:red; font:large; font-weight:bold; align-items:center;">@TempData["message_data"]</p>
+    }
+    <div class="row">
+        @if (Model.TestList.Count > 0)
+        {
+            <table id="example1" class="table table-bordered dataTable table-striped">
+                <thead>
+                    <tr>
+                        <th>
+                            Date
+                        </th>
+                        <th>
+                            Number of participants
+                        </th>
+                        <th>
+                            Test Type
+                        </th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.TestList)
+                    {
+                        <tr>
+                            <td>
+                                @{ long id = item.ID; }
+                                <a href="~/@controllerName/Details/@id" class="btn btn-primary btn-sm btn-icon icon-left">
+                                    <i class="entypo-pencil"></i>
+                                    <span asp-for="@item.TestDate" class="control-label">@item.TestDate.ToString("MMddyyyy")</span>
+                                </a>
+                            </td>
+                            <td>
+                                <span asp-for="@item.NumberOfPerticipent" class="control-label">@item.NumberOfPerticipent</span>
+                            </td>
+                            <td>
+                                <span asp-for="@item.TestName" class="control-label">@item.TestName</span>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+
+        <div id="SportsCreateTestModalId" class="modal fade modalNumber1 modelOpen2ndButtonclass" role="dialog">
+            <div class="modal-dialog container" style="width:65%">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color:cadetblue">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title">CREATE NEW TEST</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div v class="col-md-12">
+                                <!-- /.Main Content Body -->
+                                <div class="box-body">
+                                    <form asp-action="Create" class="form-horizontal">
+                                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                        <div class="form-group">
+                                            <div class="col-md-12">
+                                                <label for="inputUserName" class="col-md-4 control-label">Type</label>
+                                                <div class="col-md-8">
+                                                    <select asp-for="TestTypeID" class="form-control select2" asp-items="ViewBag.TestTypeID">
+                                                        <option disabled selected>--- Choose ---</option>
+                                                    </select>
+                                                    <span asp-validation-for="TestTypeID" class="help-block"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label for="inputDate" class="col-md-4 control-label">Date</label>
+                                                <div class="col-md-8">
+                                                    <input asp-for="TestDate" class="form-control input-sm">
+                                                    <span asp-validation-for="TestDate" class="help-block"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <button type="submit" class="btn btn-primary btn-sm pull-right">Save</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- ./Main Content Body End -->
+                                <!-- /.box-footer -->
+                                <!-- /.box -->
+                            </div>
+                            <!-- /.col -->
+                        </div>
+                    </div>
+                    <div class="modal-footer" style="background-color:burlywood">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+        $(function () {
+            $('#messDisplay').delay(2000).hide(500);
+            $('#messDisplay2').delay(2000).hide(500);
+        });
+</script>

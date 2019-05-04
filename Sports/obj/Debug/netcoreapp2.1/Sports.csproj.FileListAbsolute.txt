@@ -1,0 +1,14 @@
+c:\users\prime tech\source\repos\Sports\Sports\obj\Debug\netcoreapp2.1\Sports.csproj.CoreCompileInputs.cache
+c:\users\prime tech\source\repos\Sports\Sports\obj\Debug\netcoreapp2.1\Sports.RazorAssemblyInfo.cache
+c:\users\prime tech\source\repos\Sports\Sports\obj\Debug\netcoreapp2.1\Sports.RazorAssemblyInfo.cs
+c:\users\prime tech\source\repos\Sports\Sports\obj\Debug\netcoreapp2.1\Sports.AssemblyInfoInputs.cache
+c:\users\prime tech\source\repos\Sports\Sports\obj\Debug\netcoreapp2.1\Sports.AssemblyInfo.cs
+C:\Users\PRIME TECH\source\repos\Sports\Sports\obj\Debug\netcoreapp2.1\Sports.csprojAssemblyReference.cache
+C:\Users\PRIME TECH\source\repos\Sports\Sports\bin\Debug\netcoreapp2.1\Sports.deps.json
+C:\Users\PRIME TECH\source\repos\Sports\Sports\bin\Debug\netcoreapp2.1\Sports.runtimeconfig.json
+C:\Users\PRIME TECH\source\repos\Sports\Sports\bin\Debug\netcoreapp2.1\Sports.runtimeconfig.dev.json
+C:\Users\PRIME TECH\source\repos\Sports\Sports\bin\Debug\netcoreapp2.1\Sports.dll
+C:\Users\PRIME TECH\source\repos\Sports\Sports\obj\Debug\netcoreapp2.1\Sports.RazorTargetAssemblyInfo.cache
+C:\Users\PRIME TECH\source\repos\Sports\Sports\bin\Debug\netcoreapp2.1\Sports.pdb
+C:\Users\PRIME TECH\source\repos\Sports\Sports\obj\Debug\netcoreapp2.1\Sports.dll
+C:\Users\PRIME TECH\source\repos\Sports\Sports\obj\Debug\netcoreapp2.1\Sports.pdb
