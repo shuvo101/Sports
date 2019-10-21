@@ -1,0 +1,92 @@
+﻿@model IEnumerable<IMTestProject.Common.Dto.TableConfiguration.TableConfigurationDto>
+@using IMTestProject.Common.Enum;
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    var controllerName = this.ViewContext.RouteData.Values["controller"].ToString();
+}
+<div class="box-body">
+    <p>
+        <a class="btn btn-sm btn-success" asp-action="Create">Create New</a>
+    </p>
+    @if (Model != null && Model.Count() > 0)
+    {
+        <table id="example1" class="table table-bordered dataTable table-striped">
+            <thead>
+                <tr>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Display Name
+                    </th>
+                    <th>
+                        Control Type
+                    </th>
+                    <th>
+                        Data Type
+                    </th>
+                    <th>
+                        Referance Table
+                    </th>
+                    <th>
+                        Text Field
+                    </th>
+                    <th>
+                        Value Field
+                    </th>
+                    <th>
+                        Action
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            <span asp-for="@item.Name" class="control-label">@item.Name</span>
+                        </td>
+                        <td>
+                            <span asp-for="@item.DisplayName" class="control-label">@item.DisplayName</span>
+                        </td>
+                        <td>
+                            @{ var controlTypeName = ((ControlTypeEnum)Convert.ToUInt32(@item.ControlType)).ToString();}
+                            <span asp-for="@item.ControlType" class="control-label">@controlTypeName</span>
+                        </td>
+                        <td>
+                            <span asp-for="@item.DataType" class="control-label">@item.DataType</span>
+                        </td>
+                        <td>
+                            <span asp-for="@item.ReferanceTable" class="control-label">@item.ReferanceTable</span>
+                        </td>
+                        <td>
+                            <span asp-for="@item.TextField" class="control-label">@item.TextField</span>
+                        </td>
+                        <td>
+                            <span asp-for="@item.ValueField" class="control-label">@item.ValueField</span>
+                        </td>
+
+                        <td>
+                            @{ long id = item.Id; }
+                            <a href="~/@controllerName/Edit/@id" class="btn btn-primary btn-sm btn-icon icon-left"><i class="entypo-pencil"></i>Edit</a>
+
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <div class="col-md-12 center-block">
+            <h2>You have no result</h2>
+        </div>
+
+    }
+</div>
+

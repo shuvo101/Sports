@@ -1,0 +1,54 @@
+C:\Users\hakim\source\repos\IMTestProject.Api\IMTestProject.DAL\obj\Debug\netcoreapp2.2\IMTestProject.DAL.csprojAssemblyReference.cache
+C:\Users\hakim\source\repos\IMTestProject.Api\IMTestProject.DAL\obj\Debug\netcoreapp2.2\IMTestProject.DAL.csproj.CoreCompileInputs.cache
+C:\Users\hakim\source\repos\IMTestProject.Api\IMTestProject.DAL\obj\Debug\netcoreapp2.2\IMTestProject.DAL.AssemblyInfoInputs.cache
+C:\Users\hakim\source\repos\IMTestProject.Api\IMTestProject.DAL\obj\Debug\netcoreapp2.2\IMTestProject.DAL.AssemblyInfo.cs
+C:\Users\hakim\source\repos\IMTestProject.Api\IMTestProject.DAL\bin\Debug\netcoreapp2.2\IMTestProject.DAL.deps.json
+C:\Users\hakim\source\repos\IMTestProject.Api\IMTestProject.DAL\bin\Debug\netcoreapp2.2\IMTestProject.DAL.dll
+C:\Users\hakim\source\repos\IMTestProject.Api\IMTestProject.DAL\bin\Debug\netcoreapp2.2\IMTestProject.DAL.pdb
+C:\Users\hakim\source\repos\IMTestProject.Api\IMTestProject.DAL\bin\Debug\netcoreapp2.2\IMTestProject.Common.dll
+C:\Users\hakim\source\repos\IMTestProject.Api\IMTestProject.DAL\bin\Debug\netcoreapp2.2\IMTestProject.Common.pdb
+C:\Users\hakim\source\repos\IMTestProject.Api\IMTestProject.DAL\obj\Debug\netcoreapp2.2\IMTestProject.DAL.csproj.CopyComplete
+C:\Users\hakim\source\repos\IMTestProject.Api\IMTestProject.DAL\obj\Debug\netcoreapp2.2\IMTestProject.DAL.dll
+C:\Users\hakim\source\repos\IMTestProject.Api\IMTestProject.DAL\obj\Debug\netcoreapp2.2\IMTestProject.DAL.pdb
+E:\Personal\Imtiaz Vaiya\RND Projects\Solutions\IMTestProject.Api\IMTestProject.DAL\bin\Debug\netcoreapp2.2\IMTestProject.DAL.deps.json
+E:\Personal\Imtiaz Vaiya\RND Projects\Solutions\IMTestProject.Api\IMTestProject.DAL\bin\Debug\netcoreapp2.2\IMTestProject.DAL.dll
+E:\Personal\Imtiaz Vaiya\RND Projects\Solutions\IMTestProject.Api\IMTestProject.DAL\bin\Debug\netcoreapp2.2\IMTestProject.DAL.pdb
+E:\Personal\Imtiaz Vaiya\RND Projects\Solutions\IMTestProject.Api\IMTestProject.DAL\bin\Debug\netcoreapp2.2\IMTestProject.Common.dll
+E:\Personal\Imtiaz Vaiya\RND Projects\Solutions\IMTestProject.Api\IMTestProject.DAL\bin\Debug\netcoreapp2.2\IMTestProject.Common.pdb
+E:\Personal\Imtiaz Vaiya\RND Projects\Solutions\IMTestProject.Api\IMTestProject.DAL\obj\Debug\netcoreapp2.2\IMTestProject.DAL.csprojAssemblyReference.cache
+E:\Personal\Imtiaz Vaiya\RND Projects\Solutions\IMTestProject.Api\IMTestProject.DAL\obj\Debug\netcoreapp2.2\IMTestProject.DAL.csproj.CoreCompileInputs.cache
+E:\Personal\Imtiaz Vaiya\RND Projects\Solutions\IMTestProject.Api\IMTestProject.DAL\obj\Debug\netcoreapp2.2\IMTestProject.DAL.AssemblyInfoInputs.cache
+E:\Personal\Imtiaz Vaiya\RND Projects\Solutions\IMTestProject.Api\IMTestProject.DAL\obj\Debug\netcoreapp2.2\IMTestProject.DAL.AssemblyInfo.cs
+E:\Personal\Imtiaz Vaiya\RND Projects\Solutions\IMTestProject.Api\IMTestProject.DAL\obj\Debug\netcoreapp2.2\IMTestProject.DAL.csproj.CopyComplete
+E:\Personal\Imtiaz Vaiya\RND Projects\Solutions\IMTestProject.Api\IMTestProject.DAL\obj\Debug\netcoreapp2.2\IMTestProject.DAL.dll
+E:\Personal\Imtiaz Vaiya\RND Projects\Solutions\IMTestProject.Api\IMTestProject.DAL\obj\Debug\netcoreapp2.2\IMTestProject.DAL.pdb
+E:\Personal\Imtiaz Vaiya\RND Projects\Solutions\IMTestProject.Api\IMTestProject.DAL\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+E:\Personal\Imtiaz Vaiya\RND Projects\Solutions\IMTestProject.Api\IMTestProject.DAL\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Mvc.ViewFeatures.xml
+D:\Imtiaz\IMTestProject.Api_V3\IMTestProject.DAL\bin\Debug\netcoreapp2.2\IMTestProject.DAL.deps.json
+D:\Imtiaz\IMTestProject.Api_V3\IMTestProject.DAL\bin\Debug\netcoreapp2.2\IMTestProject.DAL.dll
+D:\Imtiaz\IMTestProject.Api_V3\IMTestProject.DAL\bin\Debug\netcoreapp2.2\IMTestProject.DAL.pdb
+D:\Imtiaz\IMTestProject.Api_V3\IMTestProject.DAL\bin\Debug\netcoreapp2.2\IMTestProject.Common.dll
+D:\Imtiaz\IMTestProject.Api_V3\IMTestProject.DAL\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+D:\Imtiaz\IMTestProject.Api_V3\IMTestProject.DAL\bin\Debug\netcoreapp2.2\IMTestProject.Common.pdb
+D:\Imtiaz\IMTestProject.Api_V3\IMTestProject.DAL\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Mvc.ViewFeatures.xml
+D:\Imtiaz\IMTestProject.Api_V3\IMTestProject.DAL\obj\Debug\netcoreapp2.2\IMTestProject.DAL.csprojAssemblyReference.cache
+D:\Imtiaz\IMTestProject.Api_V3\IMTestProject.DAL\obj\Debug\netcoreapp2.2\IMTestProject.DAL.csproj.CoreCompileInputs.cache
+D:\Imtiaz\IMTestProject.Api_V3\IMTestProject.DAL\obj\Debug\netcoreapp2.2\IMTestProject.DAL.AssemblyInfoInputs.cache
+D:\Imtiaz\IMTestProject.Api_V3\IMTestProject.DAL\obj\Debug\netcoreapp2.2\IMTestProject.DAL.AssemblyInfo.cs
+D:\Imtiaz\IMTestProject.Api_V3\IMTestProject.DAL\obj\Debug\netcoreapp2.2\IMTestProject.DAL.csproj.CopyComplete
+D:\Imtiaz\IMTestProject.Api_V3\IMTestProject.DAL\obj\Debug\netcoreapp2.2\IMTestProject.DAL.dll
+D:\Imtiaz\IMTestProject.Api_V3\IMTestProject.DAL\obj\Debug\netcoreapp2.2\IMTestProject.DAL.pdb
+E:\Personal\Imtiaz Vaiya\RND Projects\Solutions\IMTestProject.Api_V3_update\IMTestProject.Api_V3\IMTestProject.DAL\bin\Debug\netcoreapp2.2\IMTestProject.DAL.deps.json
+E:\Personal\Imtiaz Vaiya\RND Projects\Solutions\IMTestProject.Api_V3_update\IMTestProject.Api_V3\IMTestProject.DAL\bin\Debug\netcoreapp2.2\IMTestProject.DAL.dll
+E:\Personal\Imtiaz Vaiya\RND Projects\Solutions\IMTestProject.Api_V3_update\IMTestProject.Api_V3\IMTestProject.DAL\bin\Debug\netcoreapp2.2\IMTestProject.DAL.pdb
+E:\Personal\Imtiaz Vaiya\RND Projects\Solutions\IMTestProject.Api_V3_update\IMTestProject.Api_V3\IMTestProject.DAL\bin\Debug\netcoreapp2.2\IMTestProject.Common.dll
+E:\Personal\Imtiaz Vaiya\RND Projects\Solutions\IMTestProject.Api_V3_update\IMTestProject.Api_V3\IMTestProject.DAL\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+E:\Personal\Imtiaz Vaiya\RND Projects\Solutions\IMTestProject.Api_V3_update\IMTestProject.Api_V3\IMTestProject.DAL\bin\Debug\netcoreapp2.2\IMTestProject.Common.pdb
+E:\Personal\Imtiaz Vaiya\RND Projects\Solutions\IMTestProject.Api_V3_update\IMTestProject.Api_V3\IMTestProject.DAL\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Mvc.ViewFeatures.xml
+E:\Personal\Imtiaz Vaiya\RND Projects\Solutions\IMTestProject.Api_V3_update\IMTestProject.Api_V3\IMTestProject.DAL\obj\Debug\netcoreapp2.2\IMTestProject.DAL.csprojAssemblyReference.cache
+E:\Personal\Imtiaz Vaiya\RND Projects\Solutions\IMTestProject.Api_V3_update\IMTestProject.Api_V3\IMTestProject.DAL\obj\Debug\netcoreapp2.2\IMTestProject.DAL.csproj.CoreCompileInputs.cache
+E:\Personal\Imtiaz Vaiya\RND Projects\Solutions\IMTestProject.Api_V3_update\IMTestProject.Api_V3\IMTestProject.DAL\obj\Debug\netcoreapp2.2\IMTestProject.DAL.AssemblyInfoInputs.cache
+E:\Personal\Imtiaz Vaiya\RND Projects\Solutions\IMTestProject.Api_V3_update\IMTestProject.Api_V3\IMTestProject.DAL\obj\Debug\netcoreapp2.2\IMTestProject.DAL.AssemblyInfo.cs
+E:\Personal\Imtiaz Vaiya\RND Projects\Solutions\IMTestProject.Api_V3_update\IMTestProject.Api_V3\IMTestProject.DAL\obj\Debug\netcoreapp2.2\IMTestProject.DAL.csproj.CopyComplete
+E:\Personal\Imtiaz Vaiya\RND Projects\Solutions\IMTestProject.Api_V3_update\IMTestProject.Api_V3\IMTestProject.DAL\obj\Debug\netcoreapp2.2\IMTestProject.DAL.dll
+E:\Personal\Imtiaz Vaiya\RND Projects\Solutions\IMTestProject.Api_V3_update\IMTestProject.Api_V3\IMTestProject.DAL\obj\Debug\netcoreapp2.2\IMTestProject.DAL.pdb
